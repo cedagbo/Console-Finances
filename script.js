@@ -107,7 +107,7 @@ for (var i=0; i < finances.length; i++){
 // console.log("$" + PnL);
 
 // 4. Generate the average of the change in the PnL over the entire period
-// Let us compute the differences between values and assign it an average
+// Let us compute the differences between values and assign it to an average
 var diffValues = 0;
 var diffSum = 0;
 var average = 0;
@@ -150,8 +150,8 @@ console.log('\n ' +
 '\n ' +
 '\n Average Change: ' + '$' + avgChange.toFixed(2) +
 '\n ' +
-'\n Greatest Increase in Profits: ' + 'Jan-2012' + '$' + greatestIncrease +
+'\n Greatest Increase in Profits: ' + 'Jan-2012 ' + '($' + greatestIncrease + ')' +
 '\n ' +
-'\n Greatest Decrease in Profits: ' + 'Aug 2013' + '$' + greatestDecrease +
+'\n Greatest Decrease in Profits: ' + 'Aug-2013 ' + '($' + greatestDecrease + ')' +
 '\n '
 );

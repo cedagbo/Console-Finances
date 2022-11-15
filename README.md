@@ -47,8 +47,10 @@ No installation is required.
 
 ## Documentation
 <ul>
-    <li>https://www.w3schools.com/</li>
-    <li>https://developer.mozilla.org/en-US/</li>
+    <li><a>https://eloquentjavascript.net/</a></li>
+    <li><a>https://books.google.us/books/about/JavaScript.html?id=vJGlu9t9LNYC&redir_esc=y</a></li>
+    <li><a>https://www.w3schools.com/</a></li>
+    <li><a>https://developer.mozilla.org/en-US/</a></li>
 </ul>
 
 ## License
