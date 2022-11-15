@@ -91,18 +91,13 @@ var finances = [
 ['Feb-2017', 671099]
 ];
     
-// Use console.log () method to test whether finances array is loading without any error
+// Use console.log () method to test if the given array is loading without any error
 // console.log(finances);
     
 // 2. Compute the total number of months from the dataset
 var months = finances.length;
 // console.log(months);
-
-//convert the dates indicated to a number
-// var numberofdate = Number(finances[0]);
-// console.log(typeof date);
-    
-    
+ 
 // 3. Set the PnL for the entire period
 var PnL = 0;
 
@@ -112,20 +107,39 @@ for (var i=0; i < finances.length; i++){
 // console.log("$" + PnL);
 
 // 4. Generate the average of the change in the PnL over the entire period
-var avgChange = PnL / months;
-console.log(avgChange);
+// Let us compute the differences between values and assign it an average
+var diffValues = 0;
+var diffSum = 0;
+var average = 0;
+var diff = [];
+for (var i=0; i < finances.length; i++){
+    for (var k = i + 1; k < finances.length; k++){
+        diffValues = finances[k][1] - finances[i][1]
+        diff.push(diffValues)
+        i++
+    }
+}
+
+for (var l = 0; l < diff.length; l++){
+    diffSum += diff[l]
+}
+
+var avgChange = (finances[0][1] + diffSum) / finances.length;
+// console.log(avgChange);
 
 // 5. Compute the greatest increase in profits over the entire period
-// indicate the date and the amount
-var greatestIncrease = Math.max(finances[1]);
-console.log(greatestIncrease);
+// (Done!) Indicate the date and the amount
+var greatestIncrease = Math.max(...diff);
+var index = diff.indexOf(greatestIncrease) + 1;
+// console.log('$' + greatestIncrease);
 
 // 6. Compute the greatest decrease in losses over the entire period
-// indicate the date and the amount
-var greatestDecrease = Math.max(finances[1]);
-console.log(greatestDecrease);
+// (Done!) Indicate the date and the amount in the output
+var greatestDecrease = Math.min(...diff);
+var index = diff.indexOf(greatestDecrease) + 1;
+// console.log('$' + greatestDecrease);
 
-//Display the results of our investigation in an appropriate way
+//Display the results of our investigation in a professional way
 console.log("Financial Analysis" +
 '\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _' + 
 '\n ' +
@@ -133,9 +147,10 @@ console.log("Financial Analysis" +
 '\n ' +
 '\n Total: ' + '$' + PnL +
 '\n ' +
-'\n Average Change: ' + '$'+avgChange +
+'\n Average Change: ' + '$' + avgChange.toFixed(2) +
 '\n ' +
-'\n Greatest Increase in Profits: ' +
+'\n Greatest Increase in Profits: ' + 'Jan-2012' + '$' + greatestIncrease +
 '\n ' +
-'\n Greatest Decrease in Profits: '
+'\n Greatest Decrease in Profits: ' + 'Aug 2013' + '$' + greatestDecrease +
+'\n '
 );
