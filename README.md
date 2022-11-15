@@ -38,12 +38,18 @@ problem.
  </ul>
 
 ## Installation
-No 
+No installation is required. 
 ## Usage
- 
+<ul>
+    <li>Click on the url of the website. Please refer to the deployment section</li>
+    <li>Consult the inspection tool and the console tab to see the output</li>
+</ul>
 
 ## Documentation
-
+<ul>
+    <li>https://www.w3schools.com/</li>
+    <li>https://developer.mozilla.org/en-US/</li>
+</ul>
 
 ## License
 Console-Finances is under MIT License.
