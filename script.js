@@ -140,7 +140,8 @@ var index = diff.indexOf(greatestDecrease) + 1;
 // console.log('$' + greatestDecrease);
 
 //Display the results of our investigation in a professional way
-console.log("Financial Analysis" +
+console.log('\n ' +
+"Financial Analysis" +
 '\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _' + 
 '\n ' +
 '\n Total Months: ' + months +
