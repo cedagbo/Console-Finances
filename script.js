@@ -117,7 +117,19 @@ console.log(avgChange);
 
 // 5. Compute the greatest increase in profits over the entire period
 // indicate the date and the amount
-var greatestIncrease = Math.max
+var greatestIncrease = Math.max(finances[1]);
+console.log(greatestIncrease);
 
 // 6. Compute the greatest decrease in losses over the entire period
-    // indicate the date and the amount
+// indicate the date and the amount
+
+
+//Display the results of our investigation in an appropriate way
+console.log("Financial Analysis" +
+'\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _' + 
+'\n ' +
+'\n Total Months: ' + months +
+'\n ' +
+'\n Total: ' + '$' + PnL +
+'\n ' +
+'\n Average Change: ' + '$'+avgChange);
