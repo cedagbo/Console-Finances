@@ -19,6 +19,8 @@ acquired so far, and hence create code to analyse a company's financial records.
 
 ## Screenshot
 
+<img src='./Screenshot.jpg'>
+
 ## User Story
 As an employer I want to be able to see the output of a company's financial record. The script file would allow me to assess the ability of the potential employee's to rely on Pseudocoding to solve a
 problem.
