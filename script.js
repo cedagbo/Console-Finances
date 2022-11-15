@@ -122,7 +122,8 @@ console.log(greatestIncrease);
 
 // 6. Compute the greatest decrease in losses over the entire period
 // indicate the date and the amount
-
+var greatestDecrease = Math.max(finances[1]);
+console.log(greatestDecrease);
 
 //Display the results of our investigation in an appropriate way
 console.log("Financial Analysis" +
@@ -132,4 +133,9 @@ console.log("Financial Analysis" +
 '\n ' +
 '\n Total: ' + '$' + PnL +
 '\n ' +
-'\n Average Change: ' + '$'+avgChange);
+'\n Average Change: ' + '$'+avgChange +
+'\n ' +
+'\n Greatest Increase in Profits: ' +
+'\n ' +
+'\n Greatest Decrease in Profits: '
+);
